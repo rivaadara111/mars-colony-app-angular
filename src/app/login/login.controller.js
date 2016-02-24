@@ -3,10 +3,10 @@
 
   angular
     .module('red')
-    .controller('MainController', MainController);
+    .controller('LoginCntrl', LoginCntrl);
 
   /** @ngInject */
-  function MainController($scope) {
+  function LoginCntrl($scope) {
   }
 
 })();

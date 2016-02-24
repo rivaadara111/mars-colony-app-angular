@@ -1,0 +1,85 @@
+/*CSS RESET*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
+
+/* END RESET TEST */
+//
+body {
+  background: url('../images/red-planet-mars-wallpaper-3.jpg') no-repeat center;
+  background-size: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-family:'Roboto Slab', serif;
+  font-size: 2.5rem;
+  margin: 13rem 0rem;
+  span{
+  font-size: 1rem;
+  }
+}
+
+@keyframes border-pulse
+  0% { border-color: rgba(0, 255, 255, 1); }
+50%  { border-color: rgba(0, 255, 255, 0); }
+100% { border-color: rgba(0, 255, 255, 1); }
+
+.enter-mars-app a{
+display: block;
+width: 75px;
+height: 75px;
+background: rgba(237,237,237,.2);
+opacity: 1;
+border-radius: 50%;
+-webkit-animation: border-pulse 2s infinite;
+animation: border-pulse 2s infinite;
+}
