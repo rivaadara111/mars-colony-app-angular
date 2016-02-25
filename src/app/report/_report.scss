@@ -1,0 +1,40 @@
+.report{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: transparentize(black, .5);
+  padding: 1rem;
+}
+
+.report h1{
+  font-size: 2.25rem;
+  padding-bottom: 1rem;
+  padding-top: 4rem;
+}
+
+.report h2{
+  font-size: .9rem;
+  padding-bottom: 3rem;
+  font-style: italic;
+}
+
+.selectcontain{
+  width: 80vw;
+  margin-bottom: 1rem;
+}
+
+.encounter input{
+  display: flex;
+  justify-content: flex-start;
+}
+.encounter input:hover{
+  background-color: transparentize(white, .3);
+  height: 100px;
+  }
+
+input:hover[type="text"]{
+  color:black;
+
+}

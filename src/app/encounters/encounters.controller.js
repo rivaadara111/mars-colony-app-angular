@@ -3,10 +3,10 @@
 
   angular
     .module('red')
-    .controller('EncountersCtrl', EncountersCtrl);
+    .controller('EncountersCntrl', EncountersCntrl);
 
   /** @ngInject */
-  function EncountersCtrl($scope, $http, $state) {
+  function EncountersCntrl($scope, $http, $state) {
     var GET_ENCOUNTERS_URL=
   'https://red-wdp-api.herokuapp.com/api/mars/encounters';
 

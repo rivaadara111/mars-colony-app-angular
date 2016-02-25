@@ -29,17 +29,17 @@
       .state('encounters',{
         url: '/encounters',
         templateUrl: 'app/encounters/encounters.html',
-        controller: 'EncountersCtrl'
+        controller: 'EncountersCntrl'
       })
       .state('report',{
         url: '/report',
         templateUrl: 'app/report/report.html',
-        controller: 'ReportCtrl'
+        controller: 'ReportCntrl'
       })
       .state('report-filed',{
         url: '/report-filed',
         templateUrl: 'app/report/report-filed.html',
-        controller: 'ReportCtrl'
+        controller: 'ReportCntrl'
       });
 
     $urlRouterProvider.otherwise('/');
