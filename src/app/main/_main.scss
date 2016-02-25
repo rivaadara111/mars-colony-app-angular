@@ -51,27 +51,30 @@ table {
 /* END RESET TEST */
 //
 body {
-  background: url('../images/red-planet-mars-wallpaper-3.jpg') no-repeat center;
+  background: url('../images/red-planet-mars-wallpaper-3.jpg') no-repeat center right fixed;
   background-size: stretch;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
-h1 {
+ h2, h1 {
   color: white;
   font-family:'Roboto Slab', serif;
-  font-size: 2.5rem;
-  margin: 13rem 0rem;
+  font-size: 1.25rem;
   span{
   font-size: 1rem;
   }
 }
 
+.welcome h1{
+  margin-bottom: 9rem;
+  font-size: 3rem;
+}
+
 @keyframes border-pulse
-  0% { border-color: rgba(0, 255, 255, 1); }
-50%  { border-color: rgba(0, 255, 255, 0); }
-100% { border-color: rgba(0, 255, 255, 1); }
+  0% { border-shadow: rgba(0, 255, 255, 1); }
+50%  { border-shadow: rgba(0, 255, 255, 0); }
+100% { border-shadow: rgba(0, 255, 255, 1); }
 
 .enter-mars-app a{
 display: block;
@@ -82,4 +85,6 @@ opacity: 1;
 border-radius: 50%;
 -webkit-animation: border-pulse 2s infinite;
 animation: border-pulse 2s infinite;
+margin-bottom: 14rem;
+cursor: pointer;
 }

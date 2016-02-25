@@ -1,0 +1,66 @@
+.encounters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.encounters h1{
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+}
+
+.encounters h2{
+  font-size: 1.25rem;
+  padding-bottom: 3rem;
+}
+
+.encounters-list{
+  overflow: scroll;
+  padding: 0 1rem 2rem;
+  overflow: scroll;
+  font-family: 'Arial';
+  font-size: .8rem;
+  height: 50vh;
+  width: 80vw;
+  background-color: transparentize(#70070b, .4);
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 1.5rem;
+}
+
+.list-items {
+  font-size: .8rem;
+  font-family: 'Calibri', sans-serif;
+  line-height: 1.25rem;
+  list-style-type: circle;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  &span{
+  font-weight: bold;
+  }
+}
+
+.action{
+  font-style: italic;
+  font-size: .8rem;
+}
+
+.file-report{
+  height: 100px;
+  width:100vw;
+  background-color: transparentize(black, .3);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  &:hover{
+  color:lighten($hover-color, 5%);
+  }
+
+}
