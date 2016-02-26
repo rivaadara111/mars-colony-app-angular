@@ -46,7 +46,7 @@ $scope.submit = function(event){
    url: POST_ENCOUNTER_URL,
    data: { 'encounter' : $scope.encounter } //data holds the value of the object that we're going to send to the api
  }).then(function(response){
-  //  $cookies.putObject('alien_encounter', response.data.encounters);
+   $cookies.putObject('alien_encounter', response.data.encounters);
    $state.go('encounters');
  }, function(error){
    console.log(error);
