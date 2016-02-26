@@ -1,29 +1,17 @@
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Login</title>
-    <!-- <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css"> -->
-    <link type="text/css" rel="stylesheet" href="app/index.css">
-</head>
-
-<body>
-  <div class="login">
+  <div class="login">  <!--add animation to the parent div "login" w ng-animate-->
     <h1>Enter Credentials</h1>
 
-    <div class="login-form">
+    <form class="login-form" name="loginForm" ng-class="{'show-validation': showValidation}">
 
-      <input type="text" placeholder="[name]" ng-model="user.name"/><br/>
-      <input type="text" placeholder="[age]" ng-model="user.age"/><br/>
+      <input type="text" placeholder="[name]" ng-model="user.name" required minLength="2"/><br/>
+      <input type="text" placeholder="[age]" ng-model="user.age" required/><br/>
 
 
-      <select name="jobs" id="jobs" ng-model="user.job_id"> <!--make value of user.job equal to whatever they select-->
+      <select name="jobs" id="jobs" ng-model="user.job_id" required> <!--make value of user.job equal to whatever they select-->
         <option value = "" disable selected>[select a job] </option>
         <option value="{{job.id}}" ng-repeat="job in jobs">{{job.name}}</option>
       </select><br/>
-      </div>
+      </form>
       <button ng-click="login($event)">[ enter ]</button>
 
 

@@ -1,0 +1,104 @@
+//transform: translate3d
+//opacity and transform, transitions
+//at beginning of animation------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ui-view].ng-enter, [ui-view].ng-leave{
+  transition: all 1s ease-in;
+  position:absolute;
+  top: 0; left: 0; right: 0;
+}
+
+[ui-view].ng-enter{
+  .home & {
+    opacity: 0;
+  }
+}
+
+[ui-view].ng-enter-active{
+  .home & {
+    opacity: 1;
+  }
+}
+[ui-view].ng-leave{
+  .home & {
+    opacity: 1;
+  }
+}
+[ui-view].ng-enter-leave{
+  .home & {
+    opacity: 0
+  }
+}
+//--------------------------------------------------------------------------
+
+
+[ui-view].ng-enter{
+  .login & {
+    opacity: 0;
+  }
+}
+[ui-view].ng-enter-active{
+  .login & {
+    opacity: 1;
+  }
+}
+[ui-view].ng-leave{
+  .login & {
+    opacity: 1;
+  }
+}
+[ui-view].ng-enter-leave{
+  .login & {
+    opacity: 0
+  }
+}
+  //--------------------------------------------------------------------------
+
+
+[ui-view].ng-enter{
+  .encounters & {
+    opacity: 0;
+  }
+}
+[ui-view].ng-enter-active{
+  .encounters & {
+    opacity: 1;
+  }
+}
+[ui-view].ng-leave{
+  .encounters & {
+    opacity: 1;
+  }
+}
+[ui-view].ng-enter-leave{
+  .encounters & {
+    opacity: 0
+  }
+}
+//--------------------------------------------------------------------------
+
+
+[ui-view].ng-enter{
+  .report & {
+    opacity: 0;
+  }
+}
+
+[ui-view].ng-enter-active{
+  .report & {
+    opacity: 1;
+  }
+}
+[ui-view].ng-leave{
+  .report & {
+    opacity: 1;
+  }
+}
+[ui-view].ng-enter-leave{
+  .report & {
+    opacity: 0
+  }
+}
+
+//any item that lives inside a ng-repeat repeater gets the ng-enter
+//class automatically by angular when an element is added to a list and
+//ng-leave when it is removed

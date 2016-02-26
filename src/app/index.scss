@@ -6,11 +6,13 @@
 // endbower
 //write global styles here
 
-// @import "login/login";
+// @import scss partials
+
 @import "./main/main";
 @import "./login/login";
 @import "./encounters/encounters";
 @import "./report/report";
+@import "./animations";
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
 
@@ -23,6 +25,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: $roboto;
+  overflow:scroll;
 }
 
 .browsehappy {

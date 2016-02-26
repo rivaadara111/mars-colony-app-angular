@@ -63,8 +63,12 @@
   font-style: normal;
   cursor: pointer;
   margin-top: 3rem;
+}
+
+.file-report a{
+  text-decoration: none;
+  color:white;
   &:hover{
   color:lighten($hover-color, 5%);
   }
-
 }
