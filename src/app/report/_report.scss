@@ -51,7 +51,7 @@ input:hover[type="text"]{
   display:flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-family: $font-family;
   color:white;
@@ -60,5 +60,6 @@ input:hover[type="text"]{
   left: 0;
   &:hover{
   color:lighten($hover-color, 5%);
+  font-size: 1.25rem;
   }
 }

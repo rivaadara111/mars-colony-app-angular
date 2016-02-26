@@ -15,7 +15,6 @@
 
     $scope.user = {};  //<-- use this in our post request when we do the sign in};
 
-    $cookies.putObject('mars_user', undefined);
 
 //fetch the jobs using GET REQUEST. all get requests will follow this format.
   $http({
