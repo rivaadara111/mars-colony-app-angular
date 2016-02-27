@@ -1,19 +1,25 @@
-## AngularJS - Seed application
+A web-based app for Earth colonists exploring Mars using AngularJS.<br/>
 
-This repository contains the basic application scaffold for **Project 4**. <br>
-It is based on the [generator-angular](https://github.com/yeoman/generator-angular)  application boilerplate.
+Implements:<br/>
 
-To install this project on your computer:
-
-Step 1 : Create a directory for on your computer and clone this repository:
-
-	git clone https://github.com/redacademy/angular-project.git .
-    
-Step 2 : From the project's root directory, install the project dependencies:
-	
-    npm install && bower install
-    
-Step 3 : The project should now be installed. Start the local development server by typing:
-
-	gulp serve
-
+- HTML push-state navigation.<br/>
+- Implement the ui-router plugin.<br/>
+- Define a route for each view in the specification.
+- Demonstrates use of the following Angular directives:
+ng-repeat,
+ng-click,
+ng-class,
+ng-show,
+ng-hide,
+ng-if. <br/>
+- Demonstrates use of the following Angular modules:
+Service,
+Factory,
+Controller,
+Directive. </br>
+- A mobile-first responsive layout using flexbox <br/>
+- A basic ajax GET and POST requests using Angular’s $http service to:
+Save a new colonists information,
+Save a new alien encounter,
+Fetch a list of recent encounters,
+Create a new encounter.
