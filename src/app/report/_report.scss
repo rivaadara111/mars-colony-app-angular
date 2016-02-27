@@ -3,46 +3,42 @@
   align-items: center;
   flex-direction: column;
   height: 100%;
-}
-
-.report h1{
-  font-size: 2rem;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-}
-
-.report h2{
-  font-size: .9rem;
-  padding-bottom: 1rem;
-  font-style: italic;
-  margin-bottom:20vh;
+  h1{
+   font-size: 2rem;
+   padding-bottom: 1.5rem;
+   padding-top: 1.5rem;
+ }
+  h2{
+   font-size: .9rem;
+   padding-bottom: 1rem;
+   font-style: italic;
+   margin-bottom:20vh;
+ }
 }
 
 .selectcontain{
-  width: 80vw;
   margin-bottom: 1rem;
-  // flex:1;
 }
 
-.encounter input{
+.encounter textarea{
   height: 100px;
   background-color: transparentize(white, .3);
   margin-bottom: 20vh;
+  border-radius: 5px;
+  border: 2px solid #a9a9a9;
+  padding: .5rem;
+  font-size: 1rem;
+  font-family: $font-family;
+  width: 75vw;
+  &:hover{
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+  }
 }
-
-.encounter input:hover{
-  outline: 5px blue;
-  cursor: pointer;
-background-color: transparentize(white, .3);
-  }
-
-input text.placeholder{
-  color: black;
-  }
-
-input:hover[type="text"]{
-  color:black;
-  }
 
 .button{
   height: 100px;

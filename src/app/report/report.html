@@ -1,20 +1,24 @@
 <div class="report">
-    <h1> [ Encounter Reporter ]</h1>
-    <h2> Safety on Mars is All our Responsibility.</h2>
+  <h1>
+    [ Encounter Reporter ]</h1>
+  <h2>
+    Safety on Mars is All our Responsibility.</h2>
 
-  <form class="report-form"
-        name="reportForm"
-        ng-class="{'show-validation': showValidation}"
-        ng-submit="sumbitReports()">
+  <form class="report-form" name="reportForm" ng-class="{'show-validation': showValidation}" ng-submit="sumbitReports()">
     <div class="selectcontain">
-    <select name="aliens" id="aliens" ng-model="encounter.atype" required> <!--make value of user.job equal to whatever they select-->
-      <option value = "" disable selected>[ select alien type ] </option>
-      <option value="{{alien.type}}" ng-repeat="alien in aliens">{{alien.type}}</option>
-    </select><br/>
+      <select name="aliens" id="aliens" ng-model="encounter.atype" required>
+        <!--make value of user.job equal to whatever they select-->
+        <option value="" disable selected>[ select alien type ]
+        </option>
+        <option value="{{alien.type}}" ng-repeat="alien in aliens">{{alien.type}}</option>
+      </select><br/>
     </div>
     <div class="encounter">
-    <input type="text" placeholder="[action taken]" ng-model="encounter.action" required/><br/>
+      <textarea type="text" placeholder="[describe action taken]" ng-model="encounter.action" required></textarea>
+      <br/>
     </div>
   </form>
-    <button class="button" ng-click="submit($event)"><span>[ submit ]</span></button>
+  <button class="button" ng-click="submit($event)">
+    <span>[ submit ]</span>
+  </button>
 </div>

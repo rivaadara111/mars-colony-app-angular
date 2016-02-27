@@ -1,6 +1,85 @@
 /*CSS RESET*/
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,83 +87,127 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
-
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
-
 blockquote {
-  &:before, &:after {
+  &:before,
+  &:after {
     content: '';
     content: none;
   }
 }
-
 q {
-  &:before, &:after {
+  &:before,
+  &:after {
     content: '';
     content: none;
   }
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* END RESET TEST ----------------------------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
 
-/* END RESET TEST */
-//
 body {
   background: url('../images/red-planet-mars-wallpaper-3.jpg') no-repeat center right fixed;
   background-size: stretch;
   display: flex;
   flex-direction: column;
 }
-
- h2, h1 {
+h2,
+h1 {
   color: white;
-  font-family:'Roboto Slab', serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.25rem;
-  span{
-  font-size: 1rem;
+  span {
+    font-size: 1rem;
   }
 }
-
-.welcome h1{
+.welcome h1 {
   margin-bottom: 9rem;
   font-size: 3rem;
 }
-
-@keyframes border-pulse
-  0% { border-shadow: rgba(0, 255, 255, 1); }
-50%  { border-shadow: rgba(0, 255, 255, 0); }
-100% { border-shadow: rgba(0, 255, 255, 1); }
-
-.enter-mars-app a{
-display: block;
-width: 75px;
-height: 75px;
-background: rgba(237,237,237,.2);
-opacity: 1;
-border-radius: 50%;
--webkit-animation: border-pulse 2s infinite;
-animation: border-pulse 2s infinite;
-margin-bottom: 11rem;
-cursor: pointer;
+.enter-inner-4 a,
+.enter-inner-inner,
+.enter-inner,
+.enter-mars-app {
+  width: 25px;
+  height: 25px;
+  background-color: #a9a9a9;
+  border-radius: 50%;
+  animation: border-pulse 2s infinite;
+  cursor: pointer;
+}
+.enter-mars-app {
+  margin-bottom: 11rem;
+}
+@keyframes border-pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1,1,1);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+    transform: scale3d(1.25, 1.25, 1.25);
+    opacity: 0.7;
+  }
+  75% {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2);
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes border-pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1,1,1);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+    transform: scale3d(1.25, 1.25, 1.25);
+    opacity: 0.7;
+  }
+  75% {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2);
+    opacity: 0.2;
+  }
 }

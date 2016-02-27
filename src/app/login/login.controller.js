@@ -13,7 +13,7 @@
     var POST_USER_URL =
           'https://red-wdp-api.herokuapp.com/api/mars/colonists';
 
-    $scope.user = {};  //<-- use this in our post request when we do the sign in};
+    $scope.user = {}; //<-- use this in our post request when we do the sign in};
 
 
 //fetch the jobs using GET REQUEST. all get requests will follow this format.

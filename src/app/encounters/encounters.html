@@ -1,14 +1,19 @@
 <div class="encounters">
-    <h1>Recent Encounters</h1>
-    <h2>See Something? Say Something.<h2>
-    <ul class="encounters-list">
-      <li class="list-items" ng-repeat="encounter in encounters">
-        <span>{{encounter.date}} - {{encounter.atype}}</span> <br/>
-         Action taken --> <span class="action">{{encounter.action}}</span>
-      </li>
-    </ul>
-  <footer class='file-report'><a ui-sref="report" href="/report">[ File a Report ]</a>
-  </footer>
-</div>
+  <h1>Recent Encounters</h1>
+  <h2>See Something? Say Something.<h2>
+      <ul class="encounters-list">
+        <li class="list-items" ng-repeat="encounter in encounters">
+          <span>{{encounter.date}}
+            -
+            {{encounter.atype}}</span>
+          <br/>
+          Action taken -->
+          <span class="action">{{encounter.action}}</span>
+        </li>
+      </ul>
+      <footer class='file-report'>
+        <a ui-sref="report" href="/report">[ File a Report ]</a>
+      </footer>
+    </div>
 
-<!--  -->
+    <!--  -->

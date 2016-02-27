@@ -1,26 +1,21 @@
-
 $hover-color: #88090d;
 $font-family: 'Roboto Slab', serif;
-
-.login{
+.login {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
 }
-
-.login h1{
+.login h1 {
   font-size: 2.5rem;
   padding-bottom: 17vh;
 }
-
-.login-form{
+.login-form {
   padding-bottom: 20vh;
-  color:white;
-  width:80vw;
+  color: white;
+  width: 80vw;
 }
-
 input {
   background-color: transparentize($hover-color, .4);
   font-family: $font-family;
@@ -32,48 +27,42 @@ input {
   width: 76vw;
   margin-bottom: 1rem;
   border-radius: 5px;
-  padding: .5rem;
-  &:hover{
-  background-color: transparent;
+  padding: 0.5rem;
+  &:hover {
+    background-color: transparentize($hover-color, .7);
   }
 }
-
-select.placeholder{
+select.placeholder {
   color: white;
 }
-
-input[type="text"]{
-  color:white;
+input[type="text"] {
+  color: white;
 }
-
-input[placeholder]{
-  color:white;
+input.placeholder {
+  color: white;
 }
-
 .login-form input:hover[type="text"] {
-    color: white;
+  color: white;
 }
-
 select {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    font-size: 16px;
-    font-family: $font-family;
-    font-weight: normal;
-    color: #fff;
-    width: 82vw;
-    height: 50px;
-    background-color: transparentize($hover-color, .4);
-    outline: none;
-    border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-family: $font-family;
+  font-weight: normal;
+  color: #fff;
+  width: 80vw;
+  height: 45px;
+  background-color: transparentize($hover-color, .4);
+  outline: none;
+  border-radius: 5px;
   &hidden {
-  display: none;
-  visibility: hidden;
-  padding-right: 10px;
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
   }
 }
-
 select-styled {
   position: absolute;
   top: 0;
@@ -84,58 +73,55 @@ select-styled {
   padding: 8px 15px;
   transition: all 0.2s ease-in;
   &:after {
-    content:"";
+    content: "";
     width: 0;
     height: 0;
     position: absolute;
     top: 16px;
     right: 10px;
-    color:white;
+    color: white;
   }
   &:hover {
-    background-color: darken($hover-color, 20%);
-  }
-  &:active, &.active {
-    background-color: darken($hover-color, 20%);
-    &:after {
-      top: 9px;
-      border-color: transparent transparent $hover-color transparent;
-      color:white;
-    }
+    background-color: transparentize($hover-color, .7);
   }
 }
-
 option {
- font-size: 1.25rem;
- color:#a9a9a9;
+  font-size: 1.25rem;
 }
-
 button {
   background: none;
   color: white;
   border: none;
   outline: none;
   font-size: 2rem;
-  font-family:$font-family;
+  font-family: $font-family;
   &:hover {
-  color: lighten($hover-color, 5%);
-  cursor: pointer;
-  font-size: 2rem;
+    color: lighten($hover-color, 5%);
+    cursor: pointer;
+    font-size: 2rem;
   }
 }
-
 @keyframes invalid-input {
-    0%   { border-color: rgba(0, 255, 255, 1); }
-    50% { border-color: rgba(0, 255, 255, 0); }
-    100%  { border-color: rgba(0, 255, 255, 1); }
+  0% {
+    border-color: rgba(158, 202, 237, 1);
+  }
+  50% {
+    border-color: rgba(158, 202, 237, 0);
+  }
+  100% {
+    border-color: rgba(158, 202, 237, 1);
+  }
 }
-
-.show-validation{
-input, select, option {
-   &.ng-invalid{
-    display: block;
-    border: 5px solid cyan;
-    animation: invalid-input 2s infinite;
+.show-validation {
+  input,
+  select,
+  option,
+  .login-form,
+  textarea {
+    &.ng-invalid {
+      display: block;
+      border: 5px solid #9ecaed;
+      animation: invalid-input 2s infinite;
     }
   }
 }

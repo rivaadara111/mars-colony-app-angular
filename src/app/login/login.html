@@ -1,30 +1,22 @@
-  <div class="login">  <!--add animation to the parent div "login" w ng-animate-->
-    <h1>Enter Credentials</h1>
+<div class="login">
+  <!--add animation to the parent div "login" w ng-animate-->
+  <h1>Enter Credentials</h1>
 
-    <form class="login-form" name="loginForm" ng-class="{'show-validation': showValidation}">
+  <form class="login-form" name="loginForm" ng-class="{'show-validation': showValidation}">
 
-      <input type="text" placeholder="[name]" ng-model="user.name" required minLength="2"/><br/>
-      <input type="text" placeholder="[age]" ng-model="user.age" required/><br/>
+    <input type="text" placeholder="[name]" ng-model="user.name" required minLength="2"/><br/>
+    <input type="text" placeholder="[age]" ng-model="user.age" required/><br/>
 
+    <select name="jobs" id="jobs" ng-model="user.job_id" required>
+      <!--make value of user.job equal to whatever they select-->
+      <option value="" disable selected>[select a job]
+      </option>
+      <option value="{{job.id}}" ng-repeat="job in jobs">{{job.name}}</option>
+    </select><br/>
+  </form>
+  <button ng-click="login($event)">[ enter ]</button>
 
-      <select name="jobs" id="jobs" ng-model="user.job_id" required> <!--make value of user.job equal to whatever they select-->
-        <option value = "" disable selected>[select a job] </option>
-        <option value="{{job.id}}" ng-repeat="job in jobs">{{job.name}}</option>
-      </select><br/>
-      </form>
-      <button ng-click="login($event)">[ enter ]</button>
-
-
-  </div>
+</div>
 </body>
 
 </html>
-
-<!-- //this object is what are $scope.user is sending to the api on the post request
-{
-  "colonist": {
-    "name":"mac",
-    "age":"34",
-    "job_id": "1"
-  }
-} -->
