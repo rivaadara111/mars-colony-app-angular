@@ -17,9 +17,7 @@
       url: GET_ENCOUNTERS_URL
     }).then(function(response) {
       $scope.encounters = response.data.encounters;
-      // $state.go('report');
     }, function(error) {
-      console.log(error);
     });
 
 

@@ -4,17 +4,17 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
-}
-.encounters h1 {
-  font-size: 2.25rem;
-  padding-bottom: 1rem;
-  padding-top: 4rem;
-  text-align: center;
-}
-.encounters h2 {
-  font-size: 0.9rem;
-  padding-bottom: 2rem;
-  font-style: italic;
+  h1 {
+    font-size: 2.25rem;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
+    font-style: italic;
+  }
 }
 .encounters-list {
   overflow: scroll;
@@ -56,11 +56,11 @@
   font-style: normal;
   cursor: pointer;
   margin-top: 3rem;
-}
-.file-report a {
-  text-decoration: none;
-  color: white;
-  &:hover {
-    color: lighten($hover-color, 5%);
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: lighten($hover-color, 5%);
+    }
   }
 }

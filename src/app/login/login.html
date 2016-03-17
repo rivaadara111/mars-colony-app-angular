@@ -1,5 +1,4 @@
 <div class="login">
-  <!--add animation to the parent div "login" w ng-animate-->
   <h1>Enter Credentials</h1>
 
   <form class="login-form" name="loginForm" ng-class="{'show-validation': showValidation}">
@@ -8,7 +7,6 @@
     <input type="text" placeholder="[age]" ng-model="user.age" required/><br/>
 
     <select name="jobs" id="jobs" ng-model="user.job_id" required>
-      <!--make value of user.job equal to whatever they select-->
       <option value="" disable selected>[select a job]
       </option>
       <option value="{{job.id}}" ng-repeat="job in jobs">{{job.name}}</option>

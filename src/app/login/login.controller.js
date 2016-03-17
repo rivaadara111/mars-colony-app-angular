@@ -21,11 +21,9 @@
     method: 'GET',
     url: GET_JOBS_URL
   }).then(function(response){
-      console.log(response);
       $scope.jobs = response.data.jobs;
   }, function(error){
     console.log(error);
-    //TO-do: handle error
   });
 
   //syntax for making get request in angular. takes an object as an argument,

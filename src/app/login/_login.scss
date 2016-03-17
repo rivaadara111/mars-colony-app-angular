@@ -6,10 +6,10 @@ $font-family: 'Roboto Slab', serif;
   align-items: center;
   flex-direction: column;
   height: 100vh;
-}
-.login h1 {
-  font-size: 2.5rem;
-  padding-bottom: 17vh;
+  h1 {
+    font-size: 2.5rem;
+    padding-bottom: 17vh;
+  }
 }
 .login-form {
   padding-bottom: 20vh;
